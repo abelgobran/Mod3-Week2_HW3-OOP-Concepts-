@@ -6,24 +6,15 @@ public class Person {
    String pname;
    int page;
    char pgender;
-   boolean ptraveling;
    
-    //constructor empty
-    
-    public Person()
+   
+    public Person(String name, int age, char gender)
     {
-    	//count++;
-//    	this("Peter",34,'M',true);
-    }
-    
-    //constructor with params
-    public Person(String name, int age, char gender,boolean traveling )
-    {
-    	pname=name;
+		pname=name;
     	page=age;
     	pgender=gender;
     	count++;
-    	ptraveling=traveling;
+
     }   
     
     public void Hello()
@@ -31,17 +22,7 @@ public class Person {
     	System.out.println("Hello there!!");
     }
     
-    public void travel()
-    {
-     if(ptraveling) {
-      System.out.println("I am traveling ");
-     }
-     else {
-    	 System.out.println("I am remote ");
-     }
-    }
-    
-    
+  
     public void display()
     {
     	System.out.println("Name : "+this.pname);
@@ -50,21 +31,6 @@ public class Person {
     	    	
     }
     
-    
-    
-    
-//   public void display(Person obj)
-//    {
-//  	System.out.println("within parameterized display...");
-//  	System.out.println("Name : "+obj.pname);
-//
-//    }
-    
-   double calculate(int num)
-    {
-    	System.out.println("calculate inside parent class");
-    	return 121.33;
-    }
     
     public  static  void totalPerson()
     {
